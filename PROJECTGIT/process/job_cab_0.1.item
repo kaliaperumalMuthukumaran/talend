@@ -183,7 +183,7 @@
       <column comment="" key="false" length="-1" name="status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ou1">
         <mapperTableEntries name="cabNum" expression="row1.cabNum " type="id_String" nullable="true"/>
@@ -222,7 +222,7 @@
         <mapperTableEntries name="cabNum" expression="ou1.cabNum " type="id_String" nullable="true"/>
         <mapperTableEntries name="cabbie" expression="row2.cabbie " type="id_String" nullable="true"/>
         <mapperTableEntries name="type" expression="ou1.type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="status" expression="ou1.status + &quot;booked&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="status" expression="ou1.status + &quot;cancelled&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="ou1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="cabNum" type="id_String" nullable="true"/>
